@@ -4,16 +4,20 @@
 *,
 *:after,
 *:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :active,
 :hover,
 :focus {
   outline: 0 !important;
   outline-offset: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
 }
 a,
 a:hover {
@@ -25,22 +29,65 @@ ol {
   padding: 0;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
-  }
-.primary-text{
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 87px;
-    letter-spacing: 0em;
-    color: white;
+  font-family: 'Open Sans', sans-serif;
 }
-.secondry-font{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+ul,
+ol{
+  list-style-type: none;
+}
+a{
+  display: inline-block;
+}
+.primary-text{
+  width: 970px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: left;
+}
+.secondry-text{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+  width: 496px;
+  text-transform: uppercase;
+  }
+.third-text{
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 7px;
+  text-align: left;
+}
+.text-style-four{
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--primary-color);
+text-transform: uppercase;
+
+}
+.description{
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 32px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.container{
+  width: 1320px;
+  margin: 0 auto;
 }
 /* ==============================================
              COMMON CSS END
@@ -49,9 +96,9 @@ body{
 
 
 /*===== Variable Define Start =====*/
-    :root {
-        --primary-color: #FBD784;
-    }
+:root {
+  --primary-color: #FBD784;
+}
 /*===== Variable Define End =====*/
 
 
@@ -60,7 +107,302 @@ body{
 /* ==============================================
                 NAVBAR DESIGN START
 =============================================== */
-
+.navbar{
+  padding-top: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar-wraper{
+  display: flex;
+}
+.logo{
+  width: 20%;
+}
+.menu{
+  width: 80%;
+}
+.menu ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.menu ul li a{
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  margin-right: 60px;
+  transition: all linear 0.2s;
+}
+.menu ul li:last-child a{
+  margin-right: 0px;
+}
+.menu ul li a:hover{
+  color: black;
+}
 /* ==============================================
                 NAVBAR DESIGN END
 =============================================== */
+
+/* ==============================================
+                BANNER DESIGN START
+=============================================== */
+#banner{
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 462px 0px;
+}
+.primarytext-too{
+font-size: 96px;
+font-weight: 400;
+text-align: left;
+line-height: 100px;
+letter-spacing: 0em;
+display: block;
+}
+/* ==============================================
+                BANNER DESIGN END
+=============================================== */
+
+/* ==============================================
+                HOLYDAY DESIGN START
+=============================================== */
+#holyday{
+  padding: 286px 0px 295px 0px;
+  background-color: black;
+}
+.holyday-content-wraper{
+  display: flex;
+}
+.holyday-left{
+  width: 50%;
+}
+.holyday-left img{
+  width: 100%;
+}
+.holyday-right{
+  width: 50%;
+  padding-top: 40px;
+  padding-left: 140px;
+}
+.holyday-top-text,
+.holydayheading{
+  padding-bottom: 35px;
+}
+.holyday-readmore{
+  padding-top: 66px;
+}
+
+/* ==============================================
+                HOLYDAY DESIGN END
+=============================================== */
+
+/* ==============================================
+                BROMO DESIGN START
+=============================================== */
+#bromo{
+  background-color: black;
+}
+.bromo-wraper{
+  padding-top: 313px;
+  padding-bottom: 32px;
+  background-image: url(../images/bromo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bromo-top-text{
+  text-align: center;
+  padding-bottom: 13px;
+  letter-spacing: 7px;
+
+}
+.bromo-heading{
+  width: 932px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 14px;
+}
+.bromo-description{
+  width: 893px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 26px;
+}
+.bromo-readmore{
+  text-align: center;
+}
+
+/* ==============================================
+                BROMO DESIGN END
+=============================================== */
+
+
+/* ==============================================
+                CULTURE DESIGN START
+=============================================== */
+#culture{
+  padding: 295px 0px 199px 0px;
+  background-color: black;
+}
+.culture-wraper{
+  display: flex;
+  align-items: center;
+}
+.culture-left{
+  width: 50%;
+  padding-right: 37px;
+}
+.curture-top-text,
+.culture-heading{
+  padding-bottom: 19px;
+}
+.culture-heading{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: 0em;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  width: 663px;
+  
+  }
+  
+.culture-readmore{
+  padding-top: 47px;
+}
+.culture-right{
+  width: 50%;
+}
+
+/* ==============================================
+                CULTURE DESIGN END
+=============================================== */
+
+/* ==============================================
+                FOOTER DESIGN START
+=============================================== */
+#footer{
+  background-color: black;
+}
+.footer-top-wraper{
+  display: flex;
+  padding-bottom: 70px;
+  align-items: center;
+}
+.footer-top-left{
+  width: 60%;
+}
+.footer-top-right{
+  width: 40%;
+}
+.explore{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-right: 18px;
+
+}
+.footer-btn{
+  background-color: #FFA343;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: none;
+  padding: 18px 67px;
+  border-radius: 10px;
+
+}
+/* footer bottom design start  */
+.footer-bottom-wraper{
+  display: flex;
+}
+.footer-bottom-left{
+  width: 30%;
+}
+.footer-heading{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.3px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.footer-trams{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.204545px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-top: 36px;
+}
+.social-menu-item{
+  display: flex;
+  padding-top: 48px;
+}
+.social-menu-item li i{
+  font-size: 24px;
+  color: white;
+  margin-right:29px ;
+}
+.footer-bottom-right{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.service h4,
+.about h4,
+.help h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0px;
+  letter-spacing: -0.231818px;
+  text-transform: capitalize;
+  color: #FFD1A0;
+}
+.service ul li a,
+.about ul li a,
+.help ul li a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 0px;
+  letter-spacing: -0.204545px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.footer-copy-right-text{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+  padding-top: 150px;
+  padding-bottom: 30px;
+
+}
+/* footer bottom design end */
+/* ==============================================
+                FOOTER DESIGN END
+=============================================== */
+
