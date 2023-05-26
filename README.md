@@ -1,4 +1,6 @@
 # This is html start up code
+![Full Site](./images/fullpage.png)
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
